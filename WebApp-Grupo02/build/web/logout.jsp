@@ -8,12 +8,11 @@
         <title>CERRAR SESION</title>
     </head>
     <body>
-        <h1>ACABA DE CERRAR SESION, esto se hace eliminando o vaciando las variables de sesión.</h1>
+        <h1>ACABA DE CERRAR SESION</h1>
         <c:set var="user" value="" scope="session" />
         <c:set var="nombre" value="" scope="session" />
         <c:set var="nivel" value="-1" scope="session" />
-        <p style="color:red;">
-                            <br>Dentro de unos segundos sera redirigido a la pagina de INICIO</p>
+        <p style="color:red;"><br>Sera redirigido a la pagina de INICIO, espere!</p>
         <script>
                 setTimeout(function () {
                     location.href = "index.jsp";

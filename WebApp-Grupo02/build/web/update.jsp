@@ -4,9 +4,17 @@
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix = "c"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/sql" prefix = "sql"%>
 <%@include file="conection.jsp"%>
-<c:set var="pageId" value="Eliminar"/>
+<c:set var="pageId" value="Actualizar"/>
 <c:set var="standalone" value="not"/>
 <%@ include file="seguridad.jsp" %>
+
+<c:if test="${empty param.id}">
+    <c:redirect url="error.jsp">
+        <c:param name="tipo" value="parametro"/>
+        <c:param name="destino" value="index.jsp"/>
+    </c:redirect>
+</c:if> 
+
 
 <sql:query dataSource = "${fuenteDatos}" var = "result">
     SELECT * from libros where Id = ?;

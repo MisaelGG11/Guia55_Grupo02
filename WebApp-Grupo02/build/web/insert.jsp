@@ -9,7 +9,7 @@
 <%@include file="seguridad.jsp"%>
 <%@include file="header.jsp"%>
 
-<c:if test="${empty param.age or empty param.first or empty param.last or empty param.xage}">
+<c:if test="${empty param.isbn or empty param.titulo or empty param.autor or empty param.editorial or empty param.anio}">
     <c:redirect url="error.jsp">
         <c:param name="tipo" value="parametro"/>
         <c:param name="destino" value="index.jsp"/>

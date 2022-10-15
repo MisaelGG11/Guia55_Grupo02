@@ -28,22 +28,22 @@
             <div>
                 <form id="form-insertar" name="form-insertar" method="post" action="insert.jsp">
                     <table>
-                        <tr>
-                            <td>
+                            <tr>
+                                <td>
                                 <label>ISBN:</label>
                                 <input id="input-isbn" name="isbn" class="input-text" type="text" value="" pattern="[0-9]+" minlength="13" maxlength="13" title="Codigo ISBN de 13 digitos" required="true" placeholder="0000-0000-0000-0" onkeyup="evaluarCampos()"/>
                             </td>
                             <td>
                                 <label>Título:</label>
-                                <input id="input-titulo" name="titulo" class="input-text" type="text" value="" pattern="^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$" minlength="3" maxlength="32" title="Titulo del escrito" required="true" placeholder="Titulo aquí" onkeyup="evaluarCampos"/>
+                                <input id="input-titulo" name="titulo" class="input-text" type="text" value="" pattern="^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$" minlength="3" maxlength="120" title="Titulo del escrito" required="true" placeholder="Titulo aquí" onkeyup="evaluarCampos"/>
                             </td>
                             <td>
                                 <label>Autor:</label>
-                                <input id="input-autor" name="autor" class="input-text" type="text" value="" pattern="^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$" minlength="3" maxlength="32" title="Autor del escrito" required="true" placeholder="Autor aquí" onkeyup="evaluarCampos()"/>
+                                <input id="input-autor" name="autor" class="input-text" type="text" value="" pattern="^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$" minlength="3" maxlength="120" title="Autor del escrito" required="true" placeholder="Autor aquí" onkeyup="evaluarCampos()"/>
                             </td>
                             <td>
                                 <label>Editorial:</label>
-                                <input id="input-editorial" name="editorial" class="input-text" type="text" value="" pattern="^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$" minlength="3" maxlength="32" title="Introduzca la Editorial" required="true" placeholder="Autor aquí" onkeyup="evaluarCampos()"/>
+                                <input id="input-editorial" name="editorial" class="input-text" type="text" value="" pattern="^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$" minlength="3" maxlength="120" title="Introduzca la Editorial" required="true" placeholder="Autor aquí" onkeyup="evaluarCampos()"/>
                             </td>
                             <td>
                                 <label>Año:</label>

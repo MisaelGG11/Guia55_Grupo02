@@ -39,7 +39,7 @@
         <div>
             <h1>SE HA ELIMINADO UN REGISTRO</h1> 
             <sql:update dataSource = "${fuenteDatos}" var = "count">
-                DELETE FROM libro WHERE Id = ?;
+                DELETE FROM libros WHERE Id = ?;
                 <sql:param value = "${id}"/>
             </sql:update>
             <table>
